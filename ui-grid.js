@@ -25167,7 +25167,7 @@ module.filter('px', function() {
               uiGridSelectionService.toggleRowSelection(self, row, evt, self.options.multiSelect, self.options.noUnselect);
             }
             else {
-              uiGridSelectionService.toggleRowSelection(self, row, evt, (self.options.multiSelect && !self.options.modifierKeysToMultiSelect), self.options.noUnselect);
+              uiGridSelectionService.toggleRowSelection(self, row, evt, (self.options.multiSelect && self.options.modifierKeysToMultiSelect), self.options.noUnselect);
             }
           }
 
